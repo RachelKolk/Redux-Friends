@@ -1,7 +1,14 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 
 class Friends extends React.Component {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         friends: []
+    //     }
+    // }
     
 
     render() {
@@ -15,4 +22,11 @@ class Friends extends React.Component {
     }
 }
 
-export default Friends;
+const mapStateToProps = state => ({
+    friends: state.friends
+});
+
+export default connect(
+    mapStateToProps,
+    {}
+)(Friends);
