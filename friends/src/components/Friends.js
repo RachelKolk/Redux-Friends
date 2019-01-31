@@ -13,14 +13,12 @@ class Friends extends React.Component {
     componentDidMount() {
         this.props.getFriends();
     }
-
-
-    
+   
 
     render() {
         return (
             < >
-                {this.props.friends.map((friend, id) => (
+                {this.props.friends.map((friend) => (
                    <div key={friend.id}> <h3 className="FriendName">{friend.name}</h3> 
                    <h5 className="FriendEmail">Email: {friend.email}</h5>
                    <p className="FriendAge">Age: {friend.age}</p>
