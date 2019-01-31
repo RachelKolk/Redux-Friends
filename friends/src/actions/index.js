@@ -7,7 +7,7 @@ export const FETCH_FRIEND_FAILURE = 'FETCH_FRIEND_FAILURE';
 export const getFriends = () => dispatch => {
     dispatch({type: FETCHING_FRIENDS});
     axios
-    .get('http://localhost:5000')
+    .get('http://localhost:5000/api/friends')
     .then(res => dispatch({type: FRIENDS_FETCHED, payload: res.data}))
     .catch(err => dispatch({type: FETCH_FRIEND_FAILURE, payload: err}));
 };

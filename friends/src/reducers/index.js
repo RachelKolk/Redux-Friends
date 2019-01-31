@@ -22,6 +22,11 @@ const initialState = {
 function reducer(state = initialState, action) {
     console.log('reducer', action);
     switch (action.type) {
+        case FRIENDS_FETCHED:
+        return {
+            ...state,
+            friends: action.payload
+        };
         default:
         return state;
     }
