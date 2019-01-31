@@ -5,12 +5,7 @@ import { getFriends } from '../actions';
 
 
 class Friends extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         friends: []
-    //     }
-    // }
+   
     state = {
         friends: []
     };
@@ -24,11 +19,15 @@ class Friends extends React.Component {
 
     render() {
         return (
-            <div >
+            < >
                 {this.props.friends.map((friend, id) => (
-                   <div key={friend.id}> <h3>{friend.name}</h3> </div>
+                   <div key={friend.id}> <h3 className="FriendName">{friend.name}</h3> 
+                   <h5 className="FriendEmail">Email: {friend.email}</h5>
+                   <p className="FriendAge">Age: {friend.age}</p>
+                   </div>
+                  
                 ))}
-            </div>
+            </ >
         );
     }
 }
