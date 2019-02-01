@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+
 function Form(props) {
 
     const handleClick = e => {
@@ -10,14 +12,16 @@ function Form(props) {
 
     return (
         <div>
-            <form>
-                <input
+            <form onSubmit={handleClick}>
+          
+                <input className="NameInput"
                     type="text"
                     name="name"
                     placeholder="Name"
                     onChange={props.changeHandler}
                     value={props.friend.name}
                 />
+              
 
                 <input
                     type="text"

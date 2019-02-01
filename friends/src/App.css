@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+.App .heading{
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

@@ -1,0 +1,32 @@
+.FriendForm {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.FriendCard {
+    width: 40%;
+    border: 1px solid lightgray;
+    padding: 2%;
+    margin: 2%;
+}
+
+.FriendName {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    justify-content: left;
+}
+
+.FriendEmail {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.FriendAge {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}

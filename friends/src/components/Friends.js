@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 
 import { getFriends } from '../actions';
 
+import './friends.css'
+;
 
 class Friends extends React.Component {
    
@@ -17,15 +19,15 @@ class Friends extends React.Component {
 
     render() {
         return (
-            < >
+            <div className="FriendForm">
                 {this.props.friends.map((friend) => (
-                   <div key={friend.id}> <h3 className="FriendName">{friend.name}</h3> 
-                   <h5 className="FriendEmail">Email: {friend.email}</h5>
+                   <div className="FriendCard" key={friend.id}> <p className="FriendName">{friend.name}</p> 
+                   <p className="FriendEmail">email: {friend.email}</p>
                    <p className="FriendAge">Age: {friend.age}</p>
                    </div>
                   
                 ))}
-            </ >
+            </div>
         );
     }
 }
